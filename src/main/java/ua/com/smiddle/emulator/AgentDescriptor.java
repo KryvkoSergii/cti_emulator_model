@@ -14,7 +14,7 @@ public class AgentDescriptor implements Serializable {
     private String AgentID;
     private String AgentPassword;
     private String AgentInstrument;
-    private Integer MonitorID;
+    private int MonitorID;
 
 
     public AgentStates getState() {
@@ -49,11 +49,11 @@ public class AgentDescriptor implements Serializable {
         AgentInstrument = agentInstrument;
     }
 
-    public Integer getMonitorID() {
+    public int getMonitorID() {
         return MonitorID;
     }
 
-    public void setMonitorID(Integer monitorID) {
+    public void setMonitorID(int monitorID) {
         MonitorID = monitorID;
     }
 
