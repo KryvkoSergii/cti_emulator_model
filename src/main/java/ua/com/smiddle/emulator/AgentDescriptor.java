@@ -15,6 +15,7 @@ public class AgentDescriptor implements Serializable {
     private String AgentPassword;
     private String AgentInstrument;
     private int MonitorID;
+    private long agentStatisticId;
 
 
     public AgentStates getState() {
@@ -57,6 +58,15 @@ public class AgentDescriptor implements Serializable {
         MonitorID = monitorID;
     }
 
+    public long getAgentStatisticId() {
+        return agentStatisticId;
+    }
+
+    public void setAgentStatisticId(long agentStatisticId) {
+        this.agentStatisticId = agentStatisticId;
+    }
+
+
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("AgentDescriptor{");
@@ -65,6 +75,7 @@ public class AgentDescriptor implements Serializable {
         sb.append(", AgentPassword='").append(AgentPassword).append('\'');
         sb.append(", AgentInstrument='").append(AgentInstrument).append('\'');
         sb.append(", MonitorID=").append(MonitorID);
+        sb.append(", agentStatisticId=").append(agentStatisticId);
         sb.append('}');
         return sb.toString();
     }
